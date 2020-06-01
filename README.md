@@ -1,5 +1,5 @@
 # Final Project: 
-Profitable or risky airline ? Machine learning supported modeling based on air traffic data at SFO. 
+Profitable or risky airline ? Machine learning supported modeling on air traffic data at SFO. 
 ## “Circle”
 ### Objective: Design and conduct ETL process. Create schema data base.
 * Success criteria: design tables that can show the cost and relative earnings of the air lines
