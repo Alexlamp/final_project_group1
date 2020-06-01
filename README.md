@@ -1,4 +1,4 @@
-#Final Project
+# Final Project
 Investigate criteria for profitable and risky airline based on air traffic at SFO. 
 ## “Circle”
 ### Objective: Design and conduct ETL process. Create schema data base.
