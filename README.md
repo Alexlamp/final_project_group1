@@ -14,7 +14,8 @@ Investigate criteria for profitable and risky airline based on air traffic at SF
 contains the number, age and cost of all the aircrafts that each airline has
 
 # Resources
-*	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data
+*	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
 1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
 2.	SFO_Landing_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
 3.	Fleet Data, source: https://www.kaggle.com/traceyvanp/airlinefleet
+4.  Flight Delay Data: https://www.kaggle.com/giovamata/airlinedelaycauses
