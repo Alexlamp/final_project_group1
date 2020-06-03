@@ -10,7 +10,8 @@ Investigate criteria for profitable and risky airline based on air traffic at SF
 *	After the data was imported into data frames the programs conducts cleaning process by removing irrelevant columns, and rows with missing data.
 *	After two major data frames #SFO_Passanger_statistics and #SFO_Landing_statistics were cleaned the program joints them into one, #SFO_data_df ,  and cleaned
 *	The major data frame #SFO_data_df contains all metrics used for calculating airline gain: number of passengers per month, total number of flights, total weight etc. 
-*	Based on , Fleet_Dat.csv, dataset the software creates data frame that contains the list of all the airlines that land at SFO. The #airline_fleet_cost dataframe  contains the number, age and cost of all the aircrafts that each airline has
+*	Based on , Fleet_Dat.csv, dataset the software creates data frame that contains the list of all the airlines that land at SFO. The **airline_fleet_cost dataframe 
+contains the number, age and cost of all the aircrafts that each airline has
 
 # Resources
 *	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data
