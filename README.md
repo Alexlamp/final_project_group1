@@ -13,6 +13,10 @@ Investigate criteria for profitable and risky airline based on air traffic at SF
 *	Based on , Fleet_Dat.csv, dataset the software creates data frame that contains the list of all the airlines that land at SFO. The **airline_fleet_cost dataframe 
 contains the number, age and cost of all the aircrafts that each airline has
 
+### Status (6/13):
+* Refined data for Machine Learning model: Final data set is saved as csv and exported to postregSQL
+* Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
+
 # Resources
 *	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
 1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
