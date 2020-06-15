@@ -5,7 +5,7 @@ Investigate criteria for profitable and risky airline based on air traffic at SF
 ### Objective: Design and conduct ETL process. Create schema data base.
 *	Success criteria: design tables that can show the cost and relative earnings of the air lines
 
-### Status: 
+### Status Segment I: 
 *	Created program that imports the air traffic data downloaded previously to the Resource folder  
 *	After the data was imported into data frames the programs conducts cleaning process by removing irrelevant columns, and rows with missing data.
 *	After two major data frames #SFO_Passanger_statistics and #SFO_Landing_statistics were cleaned the program joints them into one, #SFO_data_df ,  and cleaned
@@ -13,8 +13,9 @@ Investigate criteria for profitable and risky airline based on air traffic at SF
 *	Based on , Fleet_Dat.csv, dataset the software creates data frame that contains the list of all the airlines that land at SFO. The **airline_fleet_cost dataframe 
 contains the number, age and cost of all the aircrafts that each airline has
 
-### Status (6/13):
-* Refined data for Machine Learning model: Final data set is saved as csv and exported to postregSQL
+### Status Segment II:
+* Refined data processing (ETL) for Machine Learning model: Final data set is saved as csv and exported to postregSQL
+* The refined ETL program after cleaning the data loads it into the postregSQL. The model also maniulates data base to create new table "delay_airline_vs_cost" which shows average airline delay and airline fleet properties (age, cost, number airplanes). Unfortunately due to large mismatch of initial data after cleaning there are only 5 airlines remaining (out of 75). However data suggest that age and number of airplanes are key factor in reduction of the delay
 * Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
 * Integrated ML algorithm with data base
 
