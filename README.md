@@ -1,6 +1,6 @@
 
 
-# The Highest Performing Airlines 
+# Highest Performing Airlines 
 ## Ivestigating Air tracffic at San Francisco International Airport (SFO). 
 ### Tomasz Olewicz, Alex Lamp, Irene Kang, Joe Chun
 
