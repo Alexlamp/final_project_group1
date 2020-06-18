@@ -1,3 +1,0 @@
-airline fleet info
-Landing_statistics
-Passanger_statistics
