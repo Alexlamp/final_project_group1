@@ -6,18 +6,18 @@
 
 
 ## Segment 1-2 Roles
-Git Hub - Alex Lamp <br>
-Machine Learning Model - Irene Kang <br>
-Database - Tomasz Olewicz <br>
-DashBoard/Presentation - Joe Chun <br>
+Alex Lamp - Git Hub   <br>
+Irene Kang - Machine Learning Model <br>
+Tomasz Olewicz - Data Base/ Machine Learning Model <br>
+Joe Chun - DashBoard/Presentation  <br>
 
 ## Communication Protocols
 
-We communicated daily on slack, Zoom meeting 2 times a week. Other feedback through out the week ad-hoc collaboration evenings and weekends.
+Our group colaborates using two methods of telecommunication. Our primary method of communication, Zoom video conferencing, and our secondary method, Slack direct messaging. Twice a week, on Tuesday and Thursday nights, we work together in breakout sessions over Zoom. On Tuesday nights we reflect on significant issues and accomplishments that occurred over the weekend and since our previous meeting. We identify opportunities for improvement and assign responsibilities for the upcoming week. We utilize Thursday night Zoom conferences to check the progress of our group member's and to set milestones going into the following week to make sure we are on track. daily on slack, Zoom meeting 2 times a week. Other feedback through out the week ad-hoc collaboration evenings and weekends.
 
 
 ## Determining the Best Airlines
-We will be classifying  each airline that traffics through San Francisco International Airport(SFO). A Prediction of each airline’s success will be based on their performance. The outcome of our assesment will provide potential future customers with precise information of each airline’s quality and how to choose one for their own benefit.
+We will be classifying  each airline that traffics through San Francisco International Airport(SFO). A Prediction of each airline’s success will be based on their performance. The outcome of our assesment will provide potential future customers with precise information of each airline’s quality and how to choose one for their own benefit. 
 
 ![](/Images/project_workflow.png)
 
