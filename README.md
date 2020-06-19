@@ -22,13 +22,38 @@ We will be classifying  each airline that traffics through San Francisco Interna
 ![](/Images/project_workflow.png)
 
 
-# Machine Learning Model & Linear Regression
+## Database
+
+*	Created program that imports the air traffic data downloaded previously to the Resource folder  
+*	After the data was imported into data frames the programs conducts cleaning process by removing irrelevant columns, and rows with missing data.
+*	After two major data frames #SFO_Passanger_statistics and #SFO_Landing_statistics were cleaned the program joints them into one, #SFO_data_df ,  and cleaned
+*	The major data frame #SFO_data_df contains all metrics used for calculating airline gain: number of passengers per month, total number of flights, total weight etc. 
+*	Based on , Fleet_Dat.csv, dataset the software creates data frame that contains the list of all the airlines that land at SFO. The **airline_fleet_cost dataframe 
+contains the number, age and cost of all the aircrafts that each airline has
+
+![](/Images/QDBD_rev6.JPG)
+
+
+![](/Images/QDBD_rev7.JPG)
+
+## Machine Learning Model & Linear Regression
+
+* Refined data processing (ETL) for Machine Learning model: Final data set is saved as csv and exported to postregSQL
+* The refined ETL program after cleaning the data loads it into the postregSQL. The model also maniulates data base to create new table "delay_airline_vs_cost" which shows average airline delay and airline fleet properties (age, cost, number airplanes). Unfortunately due to large mismatch of initial data after cleaning there are only 5 airlines remaining (out of 75). However data suggest that age and number of airplanes are key factor in reduction of the delay
+* Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
+* Integrated ML algorithm with data base
+
+
+
+
+
+
 Logistic Regression is a statistical method for predicting binary outcomes from data. An Example of this are “yes” vs “no”.
 These are categories that translate to probability of being a 0 or a 1. We calculate the logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability.
 
 We import all dependencies we need and import our input dataset airline_performance_csv > Generate some data > Split data into training and testing > create a logistic model > fit(train) model using the training data > make predictions > validate model using test data > Evaluation metrics, retrieve the imbalanced classification report and balanced accuracy score.
 
-
+fleet_age_passenger_count.png
 
 
 
