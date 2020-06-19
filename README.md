@@ -22,6 +22,15 @@ We will be classifying  each airline that traffics through San Francisco Interna
 ![](/Images/project_workflow.png)
 
 
+# Machine Learning Model & Linear Regression
+Logistic Regression is a statistical method for predicting binary outcomes from data. An Example of this are “yes” vs “no”.
+These are categories that translate to probability of being a 0 or a 1. We calculate the logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability.
+
+We import all dependencies we need and import our input dataset airline_performance_csv > Generate some data > Split data into training and testing > create a logistic model > fit(train) model using the training data > make predictions > validate model using test data > Evaluation metrics, retrieve the imbalanced classification report and balanced accuracy score.
+
+
+
+
 
 # Resources
 *	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
