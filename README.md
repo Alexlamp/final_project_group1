@@ -19,6 +19,24 @@ contains the number, age and cost of all the aircrafts that each airline has
 * Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
 * Integrated ML algorithm with data base
 
+### Status Segment III:
+**Refined the ETL code (Data base part): 
+
+added user input for data base code and name, added commands for cleanign the tables in data base, added 3 categories of pricing of airlines (Low cost airline, Legacy, Boutique), added options of saving the data as .csv added optional analysis of airplane delay. Refined the code for more generic data input.
+
+**Refined Machine Learning code: 
+
+integrated code with sql data base, added user input of password, added option of chosing number of clusters and primary components in data classification, created correlation matrix, created plots showing key factros that impact on airline class performance. 
+
+**Machine Learning experiment: 
+
+The idea of the experiment was to divide the airline flights into performance clusters that can be use as a score. Then by summing the scores it is possible to rank and classify the airlines. In the original data the each flight data point represents the summary of flights that occurred within a one month between 2005 and 2018. Each airline has set of flight datapoints from 2005 to 2018. So we classify the monthly performance of each airline and then we take the mean of airline performance, which allows us to group and rank the airlines.
+
+In the experiment the data was divided into 3x Primary components to allow better data visualization and grouping. I found that with 3 primary components the optimal number of classes is 4. The correlation matrix showed positive correlation between number of passengers and carried weight and the airline class. Larger number of passenger (larger profit) leads to higher score. We also observed negative correlation between airline fleet costs and the class. That allowed us of interpret the class directly as a scoring rank of the airline.
+
+Preliminary results showed the highest score for AA and UA airlines have the highest average score: 3. 
+
+
 # Resources
 *	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
 1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
