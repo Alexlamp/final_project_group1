@@ -6,7 +6,7 @@
 
 
 ## Segment 1-2 Roles
-Alex Lamp - Git Hub   <br>
+Alex Lamp - Git Hub/Tableau   <br>
 Irene Kang - Machine Learning Model <br>
 Tomasz Olewicz - Data Base/ Machine Learning Model <br>
 Joe Chun - DashBoard/Presentation  <br>
@@ -21,6 +21,13 @@ We will be classifying  each airline that traffics through San Francisco Interna
 
 ![](/Images/project_workflow.png)
 
+
+# Source of Data Set
+*	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
+1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
+2.	SFO_Landing_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
+3.	Fleet Data, source: https://www.kaggle.com/traceyvanp/airlinefleet
+4.  Flight Delay Data: https://www.kaggle.com/giovamata/airlinedelaycauses
 
 ## Database
 
@@ -57,12 +64,6 @@ We import all dependencies we need and import our input dataset airline_performa
 ![](/Images/fleet_age_passenger_count_class_distribution.png)
 
 
-# Resources
-*	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
-1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
-2.	SFO_Landing_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
-3.	Fleet Data, source: https://www.kaggle.com/traceyvanp/airlinefleet
-4.  Flight Delay Data: https://www.kaggle.com/giovamata/airlinedelaycauses
 
 # Slides
 https://drive.google.com/file/d/1DO5OyS21mTK3smB3iNwiI0AWKk3BIqKb/view?usp=sharing
