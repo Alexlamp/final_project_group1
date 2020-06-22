@@ -42,7 +42,7 @@ In the experiment the data was divided into 3x Primary components to allow bette
 Preliminary results showed the highest score for AA and UA airlines have the highest average score: 3. 
 
 <p align="center">
-<img src="https://github.com/tolewicz/Neural_Network/blob/master/Fig/PC.JPG" width="450" height= "200">
+<img src="https://github.com/Alexlamp/final_project_group1/blob/tolewicz/Images/bokeh_plot%20(2).png" width="450" height= "200">
 </p>
 
 
