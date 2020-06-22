@@ -63,3 +63,6 @@ We import all dependencies we need and import our input dataset airline_performa
 2.	SFO_Landing_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
 3.	Fleet Data, source: https://www.kaggle.com/traceyvanp/airlinefleet
 4.  Flight Delay Data: https://www.kaggle.com/giovamata/airlinedelaycauses
+
+# Slides
+https://drive.google.com/file/d/1DO5OyS21mTK3smB3iNwiI0AWKk3BIqKb/view?usp=sharing
