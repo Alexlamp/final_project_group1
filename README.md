@@ -30,13 +30,9 @@ We will be classifying  each airline that traffics through San Francisco Interna
 4.  Flight Delay Data: https://www.kaggle.com/giovamata/airlinedelaycauses
 
 ## Database
+We Created a program that imports the air traffic data from Kaggle, downloaded previously to our Resources folder. After the data was imported into data frames, our program conducts a cleaning process by removing irrelevant columns, and rows that contain missing data. After two major data frames, SFO_Passanger_statistics and SFO_Landing_statistics were created, they were were cleaned a joined as SFO_data_df. 
 
-*	Created program that imports the air traffic data downloaded previously to the Resource folder  
-*	After the data was imported into data frames the programs conducts cleaning process by removing irrelevant columns, and rows with missing data.
-*	After two major data frames #SFO_Passanger_statistics and #SFO_Landing_statistics were cleaned the program joints them into one, #SFO_data_df ,  and cleaned
-*	The major data frame #SFO_data_df contains all metrics used for calculating airline gain: number of passengers per month, total number of flights, total weight etc. 
-*	Based on , Fleet_Dat.csv, dataset the software creates data frame that contains the list of all the airlines that land at SFO. The **airline_fleet_cost dataframe 
-contains the number, age and cost of all the aircrafts that each airline has
+SFO_data_df contains all metrics used for calculating each airline's gain: (number of passengers per month, total number of flights, total weight etc). We cleaned the Fleet_Dat.csv, with our program to create the airline_fleet_cost dataframe that contains the list of all the airline's that land at SFO. This data frame contains the number, age and cost of all the aircrafts that each airline has.
 
 ![](/Images/QDBD_rev6.JPG)
 
