@@ -22,7 +22,7 @@ We will be classifying  each airline that traffics through San Francisco Interna
 ![](/Images/project_workflow.png)
 
 
-# Source of Data Set
+## Source of Data Set
 *	Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
 1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
 2.	SFO_Landing_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
