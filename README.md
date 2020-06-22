@@ -35,7 +35,7 @@ The idea of the experiment was to divide the airline flights into performance cl
 In the experiment the data was divided into 3x Primary components to allow better data visualization and grouping. I found that with 3 primary components the optimal number of classes is 4. The correlation matrix showed positive correlation between number of passengers and carried weight and the airline class. Larger number of passenger (larger profit) leads to higher score. We also observed negative correlation between airline fleet costs and the class. That allowed us of interpret the class directly as a scoring rank of the airline.
 
 <p align="center">
- <img src="https://github.com/Alexlamp/final_project_group1/blob/tolewicz/Images/bokeh_plot%20(1).png" width="450" height= "200" >
+ <img src="https://github.com/Alexlamp/final_project_group1/blob/tolewicz/Images/bokeh_plot%20(1).png" width="500" height= "400" >
 </p>
 
 
