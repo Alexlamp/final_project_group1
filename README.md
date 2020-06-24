@@ -38,9 +38,9 @@ SFO_data_df contains all metrics used for calculating each airline's gain: (numb
 
 
 
-## Machine Learning Model & Linear Regression
+ & Linear Regression
 
-
+## Data Refinement (ETL)
 
 We refined and processed the data for our machine learning model with using our extract, transform load(ETL) program. The ETL program cleans the data, and loads it into PostgreSQL. The program also maniulates the data base to create a new table "delay_airline_vs_cost". 
 
@@ -50,13 +50,13 @@ This table shows the average airline delay and airline fleet metrics (age, cost,
 
 ![](/Images/average_delay.png)
 
-
-Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
-* Integrated ML algorithm with data base
+## Machine Learning Model
 
 We divide the airline flights into clusters to be later used as a score. By summing the scores it is then possible to rank and classify the airlines. In the original data set, each flight data point represents the summary of flights that occurred within one month, between 2005 and 2018. Each airline has a set of flight datapoints from 2005 to 2018. We classify the monthly performance of each airline and take the mean of airline performance This allows us to group and rank the airlines.
 
 In the experiment the data was divided into 3 Pricipal Components to improve data visualization and grouping. We find that with 3 primary components the optimal number of classes is 4. The correlation matrix showed a positive correlation between the number of passengers, carried weight and the airline class. The more passengers an airline has, the more revenue generated which ultimately leads to higher score. We observe a negative correlation between airline fleet costs and the class. This allows us to directly interpret the class as a score, or rank of the airline.
+
+![](/Images/Correlation_Matrix.png)
 
 Logistic Regression is a statistical method for predicting binary outcomes from data. An Example of this are “yes” vs “no”.
 These are categories that translate to probability of being a 0 or a 1. We calculate the logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability.
@@ -68,6 +68,7 @@ We import all dependencies we need and import our input dataset airline_performa
 
 
 ![](/Images/fleet_age_passenger_count_class_distribution.png)
+
 
 
 
