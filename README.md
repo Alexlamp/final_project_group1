@@ -56,7 +56,9 @@ We divide the airline flights into clusters to be later used as a score. By summ
 
 In the experiment the data was divided into 3 Pricipal Components to improve data visualization and grouping. We find that with 3 primary components the optimal number of classes is 4. The correlation matrix showed a positive correlation between the number of passengers, carried weight and the airline class. The more passengers an airline has, the more revenue generated which ultimately leads to higher score. We observe a negative correlation between airline fleet costs and the class. This allows us to directly interpret the class as a score, or rank of the airline.
 
-![](/Images/Correlation_Matrix.png)
+
+img src="Images/Correlation_Matrix.png" width="25"
+
 
 Logistic Regression is a statistical method for predicting binary outcomes from data. An Example of this are “yes” vs “no”.
 These are categories that translate to probability of being a 0 or a 1. We calculate the logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability.
