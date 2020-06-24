@@ -42,9 +42,12 @@ SFO_data_df contains all metrics used for calculating each airline's gain: (numb
 
 
 
-* Refined data processing (ETL) for Machine Learning model: Final data set is saved as csv and exported to postregSQL
-* The refined ETL program after cleaning the data loads it into the postregSQL. The model also maniulates data base to create new table "delay_airline_vs_cost" which shows average airline delay and airline fleet properties (age, cost, number airplanes). Unfortunately due to large mismatch of initial data after cleaning there are only 5 airlines remaining (out of 75). However data suggest that age and number of airplanes are key factor in reduction of the delay
-* Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
+We refined and processed the data for our machine learning model with using our extract, transform load(ETL) program. The ETL program cleans the data, and loads it into PostgreSQL. The program also maniulates the data base to create a new table "delay_airline_vs_cost". This table shows the average airline delay and airline fleet metrics (age, cost, number airplanes). Unfortunately, due to large mismatch of initial data after cleaning, there are only 5 airlines remaining (out of 75). The samll data set suggest that age and number of airplanes are a key factor in reduction of the delay time.
+
+![](/Images/average_delay.png)
+
+
+Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
 * Integrated ML algorithm with data base
 
 ![](/Images/QDBD_rev7.JPG)
