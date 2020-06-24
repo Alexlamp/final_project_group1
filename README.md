@@ -44,13 +44,13 @@ SFO_data_df contains all metrics used for calculating each airline's gain: (numb
 
 We refined and processed the data for our machine learning model with using our extract, transform load(ETL) program. The ETL program cleans the data, and loads it into PostgreSQL. The program also maniulates the data base to create a new table "delay_airline_vs_cost". This table shows the average airline delay and airline fleet metrics (age, cost, number airplanes). Unfortunately, due to large mismatch of initial data after cleaning, there are only 5 airlines remaining (out of 75). The samll data set suggest that age and number of airplanes are a key factor in reduction of the delay time.
 
+![](/Images/QDBD_rev7.JPG)
+
 ![](/Images/average_delay.png)
 
 
 Created unsupervised Machine Learning algorithm that classifies airlines into 2 groups and plots dependence of passanger count vs. airline costs
 * Integrated ML algorithm with data base
-
-![](/Images/QDBD_rev7.JPG)
 
 Logistic Regression is a statistical method for predicting binary outcomes from data. An Example of this are “yes” vs “no”.
 These are categories that translate to probability of being a 0 or a 1. We calculate the logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability.
