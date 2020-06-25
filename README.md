@@ -61,10 +61,11 @@ In the experiment the data was divided into 3 Pricipal Components to improve dat
 ![](/Images/airline_performance_scatter.png)
 
 ## Logistic regression 
-Split our data into training & testing > created a scalar instance > created a LR model > fit/train the model using training data> make prediction of the airline which is a method compare the actual outcome (y) values, that is whether or not the airline is rated evaluated good or bad in this case, from the test set against the model’s predicted vaues> found accuracy_score in order to validate the model using the test data : 0.62467..which implies that the model was correct around 63% of the time. 
-Classification #2 : SVM 
-Generate categorical variable list, by confirming # uniques values in each column published airline iata code from our database, we created OneHotEncoder instance > transform & added the encoded variable into the df >split training testing> create SVM model> evaluate with the SVM model accuracy : 0.573 which implies the model was correct around 57% of the time
------------------------------------------------------
+We first split our data into both training & testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted vaues, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
+
+## Support Vector Machine
+Generate categorical variable list, by confirming # uniques values in each column published airline iata code from our database, we created OneHotEncoder instance > transform & added the encoded variable into the df >split training testing> create SVM model> evaluate with the SVM model accuracy : 0.573 which implies the model was correct around 57% of the time-----------------------------------------------------
+
 Confusion matrix (classification report). The classification report shows a representation of the main classification metrics on a per-class basis. This gives a deeper intuition of the classifier behavior over global accuracy which can mask functional weaknesses in one class of a multi-class problem. The accuracy score we got from the classification report is even little higher as avg of 73% than the one we got from the logistic regression model 63%. 
 Conclusion: Compare the performance between Logistic Regression to the SVM, Which model performs better for our project? --> Logistic Regression (with avg prediction accuracy of 0.73 compared to SVM model accuracy 0.573)
 10:56
