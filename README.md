@@ -17,7 +17,7 @@ Our group collaborates using two methods of telecommunication. Our primary metho
 
 
 ## Determining the Best Airlines
-We will be classifying  each airline that traffics through San Francisco International Airport(SFO). A Prediction of each airline’s success will be based on their performance. The outcome of our assesment will provide potential future customers with precise information of each airline’s quality and how to choose one for their own benefit. 
+We will be classifying  each airline that traffics through San Francisco International Airport(SFO). A Prediction of each airline’s success or failure will be based on their performance across multiple metrics including passanger count, landing weight, fleet cost and age. The outcome of our assesment will provide future customers and potential investors with precise information, helping them choose which airline best suits their needs. 
 
 ![](/Images/project_workflow.png)
 
