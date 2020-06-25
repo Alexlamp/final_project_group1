@@ -30,16 +30,16 @@ We will be classifying  each airline that traffics through San Francisco Interna
 4.  Flight Delay Data: https://www.kaggle.com/giovamata/airlinedelaycauses
 
 ## Database
-We Created a program that imports the air traffic data from Kaggle, downloaded previously to our Resources folder. After the data was imported into data frames, our program conducts a cleaning process by removing irrelevant columns, and rows that contain missing data. After two major data frames, SFO_Passanger_statistics and SFO_Landing_statistics were created, they were were cleaned a joined as SFO_data_df. 
+We created a program that imports the air traffic data from Kaggle. After the data is imported into data frames, our program conducts a cleaning process by removing irrelevant columns and rows that contain missing data. After the two major data frames, SFO_Passanger_statistics and SFO_Landing_statistics are created, they are cleaned and joined as SFO_data_df. 
 
-SFO_data_df contains all metrics used for calculating each airline's gain: (number of passengers per month, total number of flights, total weight etc). We cleaned the Fleet_Dat.csv, with our program to create the airline_fleet_cost dataframe that contains the list of all the airline's that land at SFO. This data frame contains the number, age and cost of all the aircrafts that each airline has.
+SFO_data_df contains all metrics used for calculating each airline's gain: (number of passengers per month, total number of flights, total weight etc). We clean the Fleet_Data.csv, with our program to create the airline_fleet_cost dataframe. this dataframe contains a list of all airline's that land at SFO. This dataframe contains the number, age and cost of all the aircrafts that each airline has.
 
 ![](/Images/QDBD_rev6.JPG)
 
 
 ## Data Refinement (ETL)
 
-We refined and processed the data for our machine learning model with using our extract, transform load(ETL) program. The ETL program cleans the data, and loads it into PostgreSQL. The program also maniulates the data base to create a new table "delay_airline_vs_cost". 
+We refine and process the data for our machine learning model using our extract, transform load (ETL) program. The ETL program cleans the data, and loads it into PostgreSQL.nThe program also maniulates the database to create a new table "delay_airline_vs_cost". 
 
 ![](/Images/QDBD_rev7.JPG)
 
@@ -51,20 +51,20 @@ This table shows the average airline delay and airline fleet metrics (age, cost,
 
 We divide the airline flights into clusters to be later used as a score. By summing the scores it is then possible to rank and classify the airlines. In the original data set, each flight data point represents the summary of flights that occurred within one month, between 2005 and 2018. Each airline has a set of flight datapoints from 2005 to 2018. We classify the monthly performance of each airline and take the mean of airline performance This allows us to group and rank the airlines.
 
-In the experiment the data was divided into 3 Pricipal Components to improve data visualization and grouping. We find that with 3 primary components the optimal number of classes is 4. The correlation matrix showed a positive correlation between the number of passengers, carried weight and the airline class. The more passengers an airline has, the more revenue generated which ultimately leads to higher score. We observe a negative correlation between airline fleet costs and the class. This allows us to directly interpret the class as a score, or rank of the airline.
+In the experiment the data was divided into 3 Pricipal Components to improve data visualization and grouping. We find that with 3 primary components the optimal number of classes is 4. The correlation matrix showed a positive correlation between the number of passengers, carried weight and the airline class. The more passengers an airline has, the more revenue generated which ultimately leads to a higher score. We observe a negative correlation between airline fleet costs and the class. This allows us to directly interpret the class as a score, or rank of the airline.
 
 ![](/Images/bokeh_plot(1).png)
 
 ![](/Images/bokeh_plot(4).png)
 
 ## Logistic Regression 
-We first split our data into both training & testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted vaues, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
+We first split our data into both training and testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted values, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly, we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
 
 ## Confusion Ratrix (Classification Report). 
 The classification report shows a representation of the main classification metrics on a per-class basis. It gives a deeper intuition of the classifier behavior over global accuracy. This can mask functional weaknesses in one class of a multi-class problem. The accuracy score we receieve from the classification report is on average 73%.  
 
 ## Support Vector Machine (SVM)
-We generate a categorical variable list by confirming the number of unique values in each column that reads Published Airline IATA Code from our database. We then create a OneHotEncoder instance, and transform the dataframe using the categorical variable list. We add the encoded variable names into the dataframe, split training testing and create the SVM model. We evaluate with the SVM model accuracy: 0.573. This implies the model was correct around 57% of the time.
+We generate a categorical variable list by confirming the number of unique values in each column that reads Published Airline IATA Code from our database. We then create a OneHotEncoder instance, and transform the dataframe using the categorical variable list. We add the encoded variable names into the dataframe, split training, testing and create the SVM model. Lastly, evaluate with the SVM model accuracy: 0.573. This implies the model was correct around 57% of the time.
 
 ## Slides
 https://drive.google.com/file/d/1DO5OyS21mTK3smB3iNwiI0AWKk3BIqKb/view?usp=sharing
