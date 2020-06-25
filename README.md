@@ -75,4 +75,3 @@ https://drive.google.com/file/d/1DO5OyS21mTK3smB3iNwiI0AWKk3BIqKb/view?usp=shari
 ## Tableau
 https://public.tableau.com/profile/alexander.lamp#!/vizhome/Airlinesworkbook/Story1
 
-## Technology
