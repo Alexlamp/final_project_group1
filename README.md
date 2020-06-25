@@ -53,9 +53,9 @@ We divide the airline flights into clusters to be later used as a score. By summ
 
 In the experiment the data was divided into 3 Pricipal Components to improve data visualization and grouping. We find that with 3 primary components the optimal number of classes is 4. The correlation matrix showed a positive correlation between the number of passengers, carried weight and the airline class. The more passengers an airline has, the more revenue generated which ultimately leads to higher score. We observe a negative correlation between airline fleet costs and the class. This allows us to directly interpret the class as a score, or rank of the airline.
 
-![](/Images/Correlation_Matrix.png)
+![](/Images/bokeh_plot(1).png)
 
-![](/Images/airline_performance_scatter.png)
+![](/Images/bokeh_plot(4).png)
 
 ## Logistic Regression 
 We first split our data into both training & testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted vaues, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
