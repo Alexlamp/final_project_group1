@@ -34,10 +34,8 @@ We Created a program that imports the air traffic data from Kaggle, downloaded p
 
 SFO_data_df contains all metrics used for calculating each airline's gain: (number of passengers per month, total number of flights, total weight etc). We cleaned the Fleet_Dat.csv, with our program to create the airline_fleet_cost dataframe that contains the list of all the airline's that land at SFO. This data frame contains the number, age and cost of all the aircrafts that each airline has.
 
-<img src="https://github.com/Alexlamp/final_project_group1/Images/QDBD_rev6.JPG" width="250">
+![](/Images/QDBD_rev6.JPG)
 
-
- & Linear Regression
 
 ## Data Refinement (ETL)
 
