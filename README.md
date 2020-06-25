@@ -22,7 +22,7 @@ We will be classifying  each airline that traffics through San Francisco Interna
 ![](/Images/project_workflow.png)
 
 
-## Source of Data Set
+## Data Sources
 ### Data charts: SFO_Passanger_statistics, SFO_Landing_statistics, Fleet Data, Flight delay data
 1.	SFO_Passanger_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
 2.	SFO_Landing_statistics, source: https://www.kaggle.com/san-francisco/sf-air-traffic-passenger-and-landings-statistics
@@ -60,17 +60,19 @@ In the experiment the data was divided into 3 Pricipal Components to improve dat
 
 ![](/Images/airline_performance_scatter.png)
 
-## Logistic regression 
+## Logistic Regression 
 We first split our data into both training & testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted vaues, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
 
-## Confusion matrix (classification report). 
+## Confusion Ratrix (Classification Report). 
 The classification report shows a representation of the main classification metrics on a per-class basis. It gives a deeper intuition of the classifier behavior over global accuracy. This can mask functional weaknesses in one class of a multi-class problem. The accuracy score we receieve from the classification report is on average 73%.  
 
 ## Support Vector Machine (SVM)
-We generate a categorical variable list by confirming the number of unique values in each column that reads Published Airline IATA Code from our database. We the create a OneHotEncoder instance, and transform the dataframe using the categorical variable list. We add the encoded variable names into the dataframe, split training testing and create the SVM model. We evaluate with the SVM model accuracy: 0.573. This implies the model was correct around 57% of the time.
+We generate a categorical variable list by confirming the number of unique values in each column that reads Published Airline IATA Code from our database. We then create a OneHotEncoder instance, and transform the dataframe using the categorical variable list. We add the encoded variable names into the dataframe, split training testing and create the SVM model. We evaluate with the SVM model accuracy: 0.573. This implies the model was correct around 57% of the time.
 
-# Technology
-
-
-# Slides
+## Slides
 https://drive.google.com/file/d/1DO5OyS21mTK3smB3iNwiI0AWKk3BIqKb/view?usp=sharing
+
+## Tableau
+https://public.tableau.com/profile/alexander.lamp#!/vizhome/Airlinesworkbook/Story1
+
+## Technology
