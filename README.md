@@ -60,11 +60,17 @@ In the experiment the data was divided into 3 Pricipal Components to improve dat
 
 ![](/Images/airline_performance_scatter.png)
 
-Logistic Regression is a statistical method for predicting binary outcomes from data. An Example of this are “yes” vs “no”.
-These are categories that translate to probability of being a 0 or a 1. We calculate the logistic regression by adding an activation function as the final step to our linear model. This converts the linear regression output to a probability.
+## Logistic regression 
+Split our data into training & testing > created a scalar instance > created a LR model > fit/train the model using training data> make prediction of the airline which is a method compare the actual outcome (y) values, that is whether or not the airline is rated evaluated good or bad in this case, from the test set against the model’s predicted vaues> found accuracy_score in order to validate the model using the test data : 0.62467..which implies that the model was correct around 63% of the time. 
+Classification #2 : SVM 
+Generate categorical variable list, by confirming # uniques values in each column published airline iata code from our database, we created OneHotEncoder instance > transform & added the encoded variable into the df >split training testing> create SVM model> evaluate with the SVM model accuracy : 0.573 which implies the model was correct around 57% of the time
+-----------------------------------------------------
+Confusion matrix (classification report). The classification report shows a representation of the main classification metrics on a per-class basis. This gives a deeper intuition of the classifier behavior over global accuracy which can mask functional weaknesses in one class of a multi-class problem. The accuracy score we got from the classification report is even little higher as avg of 73% than the one we got from the logistic regression model 63%. 
+Conclusion: Compare the performance between Logistic Regression to the SVM, Which model performs better for our project? --> Logistic Regression (with avg prediction accuracy of 0.73 compared to SVM model accuracy 0.573)
+10:56
+@here Right guys! FYI: I was totally forgot to update this new finding: Confusion matrix (classification report)! the classification report accuracy was higher than the one from the logistic regression by 73% (compared to 63%) 
 
-We import all dependencies we need and import our input dataset airline_performance_csv > Generate some data > Split data into training and testing > create a logistic model > fit(train) model using the training data > make predictions > validate model using test data > Evaluation metrics, retrieve the imbalanced classification report and balanced accuracy score.
-
+# Technology
 
 
 # Slides
