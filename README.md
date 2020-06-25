@@ -64,15 +64,10 @@ In the experiment the data was divided into 3 Pricipal Components to improve dat
 We first split our data into both training & testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted vaues, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
 
 ## Confusion matrix (classification report). 
-The classification report shows a representation of the main classification metrics on a per-class basis. This gives a deeper intuition of the classifier behavior over global accuracy which can mask functional weaknesses in one class of a multi-class problem. The accuracy score we got from the classification report is even little higher as avg of 73% than the one we got from the logistic regression model 63%. 
-Conclusion: Compare the performance between Logistic Regression to the SVM, Which model performs better for our project? --> Logistic Regression (with avg prediction accuracy of 0.73 compared to SVM model accuracy 0.573)
-10:56
+The classification report shows a representation of the main classification metrics on a per-class basis. It gives a deeper intuition of the classifier behavior over global accuracy. This can mask functional weaknesses in one class of a multi-class problem. The accuracy score we receieve from the classification report is on average 73%.  
 
 ## Support Vector Machine (SVM)
 We generate a categorical variable list by confirming the number of unique values in each column that reads Published Airline IATA Code from our database. We the create a OneHotEncoder instance, and transform the dataframe using the categorical variable list. We add the encoded variable names into the dataframe, split training testing and create the SVM model. We evaluate with the SVM model accuracy: 0.573. This implies the model was correct around 57% of the time.
-
-
-@here Right guys! FYI: I was totally forgot to update this new finding: Confusion matrix (classification report)! the classification report accuracy was higher than the one from the logistic regression by 73% (compared to 63%) 
 
 # Technology
 
