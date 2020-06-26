@@ -1,1 +1,0 @@
-SELECT * FROM "SFO_data_df"
