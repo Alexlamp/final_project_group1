@@ -29,33 +29,13 @@ CREATE TABLE public.airline_cost_filtered (
     published_airline text,
     published_airline_iata_code text,
     number_of_airplanes double precision,
-    "total_cost_$m" double precision,
+    total_fleet_cost_million_usd double precision,
     fleet_age_average double precision,
     fleet_age_distribution double precision
 );
 
 
 ALTER TABLE public.airline_cost_filtered OWNER TO postgres;
-
---
--- Name: airline_delay_stat; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.airline_delay_stat (
-    "UniqueCarrier" text,
-    arrdelay_avg double precision,
-    depdelay_avg double precision,
-    distance_avg double precision,
-    carrierdelay_avg double precision,
-    year double precision,
-    arrdelay_sum double precision,
-    depdelay_sum double precision,
-    distance_sum bigint,
-    carrierdelay_sum double precision
-);
-
-
-ALTER TABLE public.airline_delay_stat OWNER TO postgres;
 
 --
 -- Name: airline_delay_stat_db; Type: TABLE; Schema: public; Owner: postgres
@@ -86,7 +66,7 @@ CREATE TABLE public.airline_fleet_cost (
     index bigint,
     published_airline text,
     number_of_airplanes double precision,
-    "total_cost_$m" integer,
+    total_fleet_cost_million_usd integer,
     fleet_age_average double precision,
     fleet_age_distribution double precision
 );
@@ -112,69 +92,84 @@ ALTER TABLE public.airline_name OWNER TO postgres;
 --
 
 CREATE TABLE public.airline_performance (
-    "Published_Airline_IATA_Code" text,
+    published_airline_iata_code text,
     landing_count double precision,
     passenger_count bigint,
     total_landed_weight double precision,
-    number_of_airplanes double precision,
-    "total_cost_$m" double precision,
+    total_fleet_cost_million_usd double precision,
     fleet_age_average double precision,
     fleet_age_distribution double precision,
-    published_airline_air_berlin bigint,
-    published_airline_air_canada bigint,
-    published_airline_air_china bigint,
-    published_airline_air_new_zealand bigint,
-    published_airline_alaska_airlines bigint,
-    published_airline_all_nippon_airways bigint,
-    published_airline_allegiant_air bigint,
-    published_airline_american_airlines bigint,
-    published_airline_asiana_airlines bigint,
-    published_airline_cathay_pacific bigint,
-    published_airline_china_airlines bigint,
-    published_airline_emirates bigint,
-    published_airline_etihad_airways bigint,
-    published_airline_frontier_airlines bigint,
-    published_airline_hawaiian_airlines bigint,
-    published_airline_japan_airlines bigint,
-    published_airline_jet_airways bigint,
-    published_airline_philippine_airlines bigint,
-    published_airline_qantas_airways bigint,
-    published_airline_singapore_airlines bigint,
-    published_airline_spirit_airlines bigint,
-    published_airline_thomas_cook_airlines bigint,
-    published_airline_turkish_airlines bigint,
-    published_airline_united_airlines bigint,
-    published_airline_virgin_america bigint,
-    geo_summary_domestic bigint,
-    geo_summary_international bigint,
-    price_category_code_low_fare bigint,
-    price_category_code_other bigint,
-    "landing_aircraft_type_0.17855239944516121" bigint,
-    "landing_aircraft_type_0.6631465954645208" bigint,
-    geo_region_asia bigint,
-    "geo_region_australia_/_oceania" bigint,
-    geo_region_canada bigint,
-    geo_region_europe bigint,
-    geo_region_middle_east bigint,
-    geo_region_us bigint
+    "published_airline_Aer Lingus" bigint,
+    "published_airline_Aeromexico" bigint,
+    "published_airline_Air Berlin" bigint,
+    "published_airline_Air Canada" bigint,
+    "published_airline_Air China" bigint,
+    "published_airline_Air France" bigint,
+    "published_airline_Air New Zealand" bigint,
+    "published_airline_Alaska Airlines" bigint,
+    "published_airline_All Nippon Airways" bigint,
+    "published_airline_Allegiant Air" bigint,
+    "published_airline_American Airlines" bigint,
+    "published_airline_Asiana Airlines" bigint,
+    "published_airline_British Airways" bigint,
+    "published_airline_Cathay Pacific" bigint,
+    "published_airline_China Airlines" bigint,
+    "published_airline_Emirates" bigint,
+    "published_airline_Etihad Airways" bigint,
+    "published_airline_Frontier Airlines" bigint,
+    "published_airline_Hawaiian Airlines" bigint,
+    "published_airline_Japan Airlines" bigint,
+    "published_airline_Jet Airways" bigint,
+    "published_airline_JetBlue Airways" bigint,
+    "published_airline_Philippine Airlines" bigint,
+    "published_airline_Qantas Airways" bigint,
+    "published_airline_Singapore Airlines" bigint,
+    "published_airline_Spirit Airlines" bigint,
+    "published_airline_Thomas Cook Airlines" bigint,
+    "published_airline_Turkish Airlines" bigint,
+    "published_airline_United Airlines" bigint,
+    "published_airline_Virgin America" bigint,
+    "geo_summary_Domestic" bigint,
+    "geo_summary_International" bigint,
+    price_category_code_low bigint,
+    price_category_code_legacy bigint,
+    price_category_code_butique bigint,
+    landing_aircraft_freight bigint,
+    landing_aircraft_passanger bigint,
+    "geo_region_Asia" bigint,
+    "geo_region_Australia / Oceania" bigint,
+    "geo_region_Canada" bigint,
+    "geo_region_Europe" bigint,
+    "geo_region_Mexico" bigint,
+    "geo_region_Middle East" bigint,
+    "geo_region_US" bigint
 );
 
 
 ALTER TABLE public.airline_performance OWNER TO postgres;
 
 --
--- Name: delay_airline; Type: TABLE; Schema: public; Owner: postgres
+-- Name: airline_performance_dt; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.delay_airline (
-    published_airline text,
+CREATE TABLE public.airline_performance_dt (
     published_airline_iata_code text,
-    unique_carrier text,
-    carrierdelay_avg double precision
+    activity_period timestamp without time zone,
+    published_airline text,
+    landing_count double precision,
+    passenger_count bigint,
+    total_landed_weight double precision,
+    geo_summary text,
+    price_category_code text,
+    landing_aircraft_type double precision,
+    geo_region text,
+    total_fleet_cost_million_usd double precision,
+    fleet_age_average double precision,
+    fleet_age_distribution double precision
 );
 
 
-ALTER TABLE public.delay_airline OWNER TO postgres;
+ALTER TABLE public.airline_performance_dt OWNER TO postgres;
 
 --
 -- Name: delay_airline_vs_cost; Type: TABLE; Schema: public; Owner: postgres
@@ -192,10 +187,24 @@ CREATE TABLE public.delay_airline_vs_cost (
 ALTER TABLE public.delay_airline_vs_cost OWNER TO postgres;
 
 --
--- Name: sfo_data_df; Type: TABLE; Schema: public; Owner: postgres
+-- Name: sfo_airline_total_cost; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.sfo_data_df (
+CREATE TABLE public.sfo_airline_total_cost (
+    published_airline text,
+    published_airline_iata_code text,
+    number_of_airplanes double precision,
+    total_fleet_cost_million_usd integer
+);
+
+
+ALTER TABLE public.sfo_airline_total_cost OWNER TO postgres;
+
+--
+-- Name: sfo_data_no_date; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.sfo_data_no_date (
     index bigint,
     published_airline_iata_code text,
     published_airline text,
@@ -209,7 +218,7 @@ CREATE TABLE public.sfo_data_df (
 );
 
 
-ALTER TABLE public.sfo_data_df OWNER TO postgres;
+ALTER TABLE public.sfo_data_no_date OWNER TO postgres;
 
 --
 -- Name: sfo_landing_statistics; Type: TABLE; Schema: public; Owner: postgres
@@ -254,17 +263,24 @@ CREATE TABLE public.sfo_passanger_statistics (
 ALTER TABLE public.sfo_passanger_statistics OWNER TO postgres;
 
 --
+-- Name: sql_combined_delay_airline; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.sql_combined_delay_airline (
+    published_airline text,
+    published_airline_iata_code text,
+    unique_carrier text,
+    carrierdelay_avg double precision
+);
+
+
+ALTER TABLE public.sql_combined_delay_airline OWNER TO postgres;
+
+--
 -- Name: ix_airline_cost_filtered_index; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE INDEX ix_airline_cost_filtered_index ON public.airline_cost_filtered USING btree (index);
-
-
---
--- Name: ix_airline_delay_stat_UniqueCarrier; Type: INDEX; Schema: public; Owner: postgres
---
-
-CREATE INDEX "ix_airline_delay_stat_UniqueCarrier" ON public.airline_delay_stat USING btree ("UniqueCarrier");
 
 
 --
@@ -289,17 +305,24 @@ CREATE INDEX ix_airline_name_index ON public.airline_name USING btree (index);
 
 
 --
--- Name: ix_airline_performance_Published_Airline_IATA_Code; Type: INDEX; Schema: public; Owner: postgres
+-- Name: ix_airline_performance_dt_published_airline_iata_code; Type: INDEX; Schema: public; Owner: postgres
 --
 
-CREATE INDEX "ix_airline_performance_Published_Airline_IATA_Code" ON public.airline_performance USING btree ("Published_Airline_IATA_Code");
+CREATE INDEX ix_airline_performance_dt_published_airline_iata_code ON public.airline_performance_dt USING btree (published_airline_iata_code);
 
 
 --
--- Name: ix_sfo_data_df_index; Type: INDEX; Schema: public; Owner: postgres
+-- Name: ix_airline_performance_published_airline_iata_code; Type: INDEX; Schema: public; Owner: postgres
 --
 
-CREATE INDEX ix_sfo_data_df_index ON public.sfo_data_df USING btree (index);
+CREATE INDEX ix_airline_performance_published_airline_iata_code ON public.airline_performance USING btree (published_airline_iata_code);
+
+
+--
+-- Name: ix_sfo_data_no_date_index; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE INDEX ix_sfo_data_no_date_index ON public.sfo_data_no_date USING btree (index);
 
 
 --
