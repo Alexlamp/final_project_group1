@@ -55,7 +55,7 @@ In the experiment the data was divided into 3 Pricipal Components to improve dat
 ## Logistic Regression 
 We first split our data into both training and testing by creating a StandardScalar instance, fitting the StandardScaler and scaling the data. We follow this up by creating a logistic regression model. Next we fit/train the model using the training data, and make a prediction of the airline test data set. This method compares the actual outcome (y) values from the test set with the model’s predicted values, and tells us whether or not the airline's rating is evaluated as good or bad. Lastly, we take the accuracy score to validate the model using the test data and receive 0.625. This implies that the model was correct around 63% of the time. 
 
-## Confusion Ratrix (Classification Report). 
+## Confusion Matrix (Classification Report). 
 The classification report shows a representation of the main classification metrics on a per-class basis. It gives a deeper intuition of the classifier behavior over global accuracy. This can mask functional weaknesses in one class of a multi-class problem. The accuracy score we receieve from the classification report is on average 73%.  
 
 ## Support Vector Machine (SVM)
