@@ -11,11 +11,6 @@ Irene Kang - Machine Learning Model <br>
 Tomasz Olewicz - Data Base/ Machine Learning Model <br>
 Joe Chun - DashBoard/Presentation  <br>
 
-## Communication Protocols
-
-Our group collaborates using two methods of telecommunication. Our primary method of communication, Zoom video conferencing, and our secondary method, Slack direct messaging. Twice a week, on Tuesday and Thursday nights, we work together in breakout sessions over Zoom. On Tuesday nights we reflect on significant issues and accomplishments that occurred over the weekend, and since our previous meeting. We identify opportunities for improvement and assign responsibilities for the upcoming week. We utilize Thursday night Zoom conferences to check the progress of our group member's and to set milestones going into the following week. We make sure our team mates are on track. In addition to our scheduled Zoom meetings, ad-hoc conferences occur on weekends when a quick sync is necessary. Our secondary means of communication, Slack is utilized throughout the week. Our teammates ask questions, provide feedback and share work through slack before committing to their branches.
-
-
 ## Determining the Best Airlines
 We will be classifying  each airline that traffics through San Francisco International Airport(SFO). A Prediction of each airline’s success or failure will be based on their performance across multiple metrics including passanger count, landing weight, fleet cost and age. The outcome of our assesment will provide future customers and potential investors with precise information, helping them choose which airline best suits their needs. 
 
