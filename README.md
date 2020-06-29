@@ -21,15 +21,15 @@ contains the number, age and cost of all the aircrafts that each airline has
 
 ### Status Segment III:
 
-**Refined the ETL code (Data base part): 
+#### Refined the ETL code (Data base part): 
 
 added user input for data base code and name, added commands for cleanign the tables in data base, added 3 categories of pricing of airlines (Low cost airline, Legacy, Boutique), added options of saving the data as .csv added optional analysis of airplane delay. Refined the code for more generic data input.
 
-* Refined Machine Learning code: 
+#### Refined Machine Learning code: 
 
 Integrated code with sql data base, added user input of password, added option of choosing number of clusters and primary components in data classification, created correlation matrix, created plots showing key factors that impact on airline class performance. 
 
-* Machine Learning experiment: 
+#### Machine Learning experiment: 
 
 The idea of the experiment was to divide the airline flights into performance clusters that can be use as a score. Then by summing the scores it is possible to rank and classify the airlines. In the original data the each flight data point represents the summary of flights that occurred within a one month between 2005 and 2018. Each airline has set of flight datapoints from 2005 to 2018. So we classify the monthly performance of each airline and then we take the mean of airline performance, which allows us to group and rank the airlines.
 
