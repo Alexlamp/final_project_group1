@@ -46,7 +46,7 @@ Preliminary results showed the highest score for AA and UA airlines have the hig
 * ETL code is fully integrated with PostgreSQL: The code was modified to be user friendly, it requires user password and sql database name to allow other operate it by other group members. The code was updated to create two new gables using table join in postregSQL. The request is to do left join tables airline_cost_filtered and sql_combined_delay_airline into delay_airline_vs_cost and clear NaN values. As a result there is a small 5 row table of airlines flying though SFO that match airline cost and delay data. The second join request is on inner join of airline_fleet_cost and airline_name into sfo_airline_total_cost which is an equivalent of airline_cost_filtered dataframe created earlier in the code. Additional block was introduced to the code allowing user to erase all the data tables from postregSQL.
 
 <p align="center">
-<img src="https://github.com/Alexlamp/final_project_group1/blob/master/Images/QDB_revFinal.JPG" width="500" height= "500">
+<img src="https://github.com/Alexlamp/final_project_group1/blob/master/Images/QDB_revFinal.JPG" width="600" height= "500">
 </p>
 
 
@@ -56,7 +56,7 @@ Preliminary results showed the highest score for AA and UA airlines have the hig
 Using the datetime data the refined algorithm presents performance factors as a function of time for each airline. The data shows how airline flight rank evolves with time e.g. VX airline progress from rank 1 to rank 3 as it carries more passengers with time.
 
 <p align="center">
-<img src="https://github.com/Alexlamp/final_project_group1/blob/master/Images/bokeh_plot(4).png" width="500" height="450" >
+<img src="https://github.com/Alexlamp/final_project_group1/blob/master/Images/bokeh_plot(4).png" width="600" height="450" >
 </p>
 
 
