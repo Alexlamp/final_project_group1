@@ -43,7 +43,9 @@ Preliminary results showed the highest score for AA and UA airlines have the hig
 
 #### Database
 
-* ETL code is fully integrated with PostgreSQL: The code was modified to be user friendly, it requires user password and sql database name to allow other operate it by other group members. The code was updated to create two new gables using table join in postregSQL. The request is to do left join tables airline_cost_filtered and sql_combined_delay_airline into delay_airline_vs_cost and clear NaN values. As a result there is a small 5 row table of airlines flying though SFO that match airline cost and delay data. The second join request is on inner join of airline_fleet_cost and airline_name into sfo_airline_total_cost which is an equivalent of airline_cost_filtered dataframe created earlier in the code. Additional block was introduced to the code allowing user to erase all the data tables from postregSQL.
+* ETL code is fully integrated with PostgreSQL: The code was modified to be user friendly, it requires user password and sql database name to allow other operate it by other group members. The code was updated to create two new tables using table join in postregSQL. The request is to do left join tables airline_cost_filtered and sql_combined_delay_airline into delay_airline_vs_cost and clear NaN values. As a result there is a small 5 row table of airlines flying though SFO that match airline cost and delay data. The second join request is on inner join of airline_fleet_cost and airline_name into sfo_airline_total_cost which is an equivalent of airline_cost_filtered dataframe created earlier in the code. Additional block was introduced to the code allowing user to erase all the data tables from postregSQL.
+
+Finalized database
 
 <p align="center">
 <img src="https://github.com/Alexlamp/final_project_group1/blob/master/Images/QDB_revFinal.JPG" width="950" height= "500">
@@ -52,6 +54,11 @@ Preliminary results showed the highest score for AA and UA airlines have the hig
 
 * Refined ETL: The ETL code was refined to modify and factorize data from dataframes: airline class, average fleet age, average age distribution. The factors were hosen based on additional study od airline average ticket cost, and freight to passenger income. 
 * Airline classification: Flight data clusters were analyzed for the correspondence with the airline performance. Based on the results from correlation matrix the incoming data were refined to maximize correlation between the score and the key airline feature. Once the correlation was established, the cluster number was assigned to the performance rank. Then the landing data was grouped by airlines and mode of flight score, afterwards the airlines were ranked. 
+
+<p align="center">
+<img src="https://github.com/Alexlamp/final_project_group1/blob/master/Images/bokeh_plot(1).png" width="500" height= "500">
+</p>
+
 
 Using the datetime data the refined algorithm presents performance factors as a function of time for each airline. The data shows how airline flight rank evolves with time e.g. VX airline progress from rank 1 to rank 3 as it carries more passengers with time.
 
